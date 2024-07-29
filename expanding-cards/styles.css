@@ -23,8 +23,8 @@ body {
 }
 
 
-/* Panel Container */
-.container__panel, .container__panel-active {
+/* Panel */
+.panel {
     background-size: cover; /* Scale the image to largest possible size without stretching it */
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ body {
 
 }
 
-.container__panel h3, .container__panel-active h3 {
+.panel h3 {
     font-size: 1.5em;
     position: absolute;
     bottom: 1.5em;
@@ -50,12 +50,12 @@ body {
 
 }
 
-.container__panel-active h3 {
+.panel--active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-.container__panel-active {
+.panel--active {
     flex: 5;
 }
 
@@ -66,8 +66,8 @@ body {
         width: 100vw;
     }
 
-    .container__panel:nth-child(4),
-    .container__panel:nth-child(5) {
+    .panel:nth-child(4),
+    .panel:nth-child(5) {
         display: none;
     }
 }
