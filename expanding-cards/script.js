@@ -1,6 +1,17 @@
-// Funciones
-const click = document.querySelectorAll('.container__panel, .container__panel-active');
+// Función de cliqueado en cada panel
+const panels = document.querySelectorAll('.panel'); // Selecciona los elementos con está clase
 
-if (click === Onclick) {
-    style
-}
+// Event listener usando el método forEach para iterar sobre cada elemento
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses(); // Remueve la clase
+        panel.classList.add('panel--active'); // Añade la clase
+    });
+});
+
+// Función que elimina la clase del panel cliqueado
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('panel--active');
+    });
+};
