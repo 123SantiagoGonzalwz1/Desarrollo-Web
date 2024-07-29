@@ -1,1 +1,73 @@
-/* Estilos */
+/* Font Type */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box; /* The browser must calculate the width and height  */
+}
+
+body {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+
+/* Panel Container */
+.container__panel, .container__panel-active {
+    background-size: cover; /* Scale the image to largest possible size without stretching it */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 3em;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 0.5em;
+    position: relative;
+    -webkit-transition: all 700ms ease-in; /* Prefix for Chrome and Safari browser */
+    transition: all 700ms ease-in;
+
+}
+
+.container__panel h3, .container__panel-active h3 {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+    margin: 0;
+    opacity: 0;
+
+}
+
+.container__panel-active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.container__panel-active {
+    flex: 5;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+
+    .container{
+        width: 100vw;
+    }
+
+    .container__panel:nth-child(4),
+    .container__panel:nth-child(5) {
+        display: none;
+    }
+}
