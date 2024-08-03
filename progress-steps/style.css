@@ -4,7 +4,7 @@
 /* Definiendo colores del borde*/
 :root {
     --line-border-fill: #3498db;
-    --line-border-empty: #383838;
+    --line-border-empty: #E0E0E0;
 
 }
 
@@ -36,9 +36,9 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 30px;
     max-width: 100%;
-    width: 22em;
+    width: 350px;
 }
 
 .progress__container::before {
@@ -68,7 +68,7 @@ body {
 /* Circle */
 .circle {
     background-color: #f1f1f1;
-    color: #e2e2e2;
+    color: #9FAECA;
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -87,13 +87,13 @@ body {
 .btn {
     background-color: var(--line-border-fill);
     color: #fff;
-    border: none;
+    border: 0;
     border-radius: 6px;
     cursor: pointer;
     font-family: inherit;
     padding: 8px 30px;
     margin: 5px;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 .btn:active {
@@ -107,20 +107,4 @@ body {
 .btn:disabled {
     background-color: var(--line-border-empty);
     cursor: not-allowed;
-}
-.button--cancel {
-    background-color: #E0E0E0;
-}
-
-.button--cancel:hover {
-    background-color: #afa7a7;
-}
-
-.button--next {
-    background-color: #3498DB;
-}
-
-.button--next:hover {
-    background-color: #1f91dd;
-
 }
