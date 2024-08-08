@@ -8,15 +8,15 @@
 
 /* Body */
 body {
-    background-color: #EFEDD6;
+    background-color: #efedd6;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin: 0;
-    overflow: hidden;
-}
+    overflow-x: hidden;
+  }
 
 /* Encabezados*/
 h1 {
@@ -30,21 +30,19 @@ h1 {
 
 /* Cajas */
 .box {
-    position: relative;
+    background-color: #4682B4;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25em;
-    height: 12.5em;
-    background-color: #4682B4;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
+    width: 400px;
+    height: 200px;
     margin: 10px;
+    border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
     transform: translateX(400%);
     transition: transform 0.4s ease;
-}
+  }
 
 .box:nth-of-type(even) {
     transform: translateX(-400%);
